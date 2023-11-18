@@ -75,6 +75,8 @@ TEMPLATES = [
 ASGI_APPLICATION = 'Djangochannel.routing.application'
 
 
+
+
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -93,11 +95,6 @@ CHANNEL_LAYERS = {
         },
     },
 }
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "channels.layers.InMemoryChannelLayer",
-#     },
-# }
 
 
 # Password validation
