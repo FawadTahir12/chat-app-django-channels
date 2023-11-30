@@ -12,5 +12,6 @@ class Message(models.Model):
     def __str__(self):
         return self.author.username + " " + str(self.timestamp)
 
-    def last_10_messages(self):
-        return  Message.objects.orderby('timestamp').all()[:10]
+    @staticmethod
+    def last_10_messages():
+        return  Message.objects.order_by('timestamp').all()[:10]
